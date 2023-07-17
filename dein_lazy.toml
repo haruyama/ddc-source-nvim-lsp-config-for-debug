@@ -50,16 +50,16 @@ call ddc#enable()
 '''
 
 # (1) display no lsp candidates
-# [[plugins]]
-# repo = 'Shougo/ddc-source-nvim-lsp'
-# on_source = 'nvim-lspconfig'
-# rev = '70086994e3d83e65eb4aed6888b84d4b0b2f3aeb'
-
-# (2) '[ddc] source: nvim-lsp "onCompleteDone()" failed' after selecting lsp candidates
 [[plugins]]
 repo = 'Shougo/ddc-source-nvim-lsp'
 on_source = 'nvim-lspconfig'
-rev = '738b86b5c16ee8f396d9437e6aea17780e325ef1'
+rev = '70086994e3d83e65eb4aed6888b84d4b0b2f3aeb'
+
+# (2) '[ddc] source: nvim-lsp "onCompleteDone()" failed' after selecting lsp candidates
+# [[plugins]]
+# repo = 'Shougo/ddc-source-nvim-lsp'
+# on_source = 'nvim-lspconfig'
+# rev = '738b86b5c16ee8f396d9437e6aea17780e325ef1'
 
 # (3) work
 # [[plugins]]
