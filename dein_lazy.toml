@@ -55,7 +55,6 @@ call ddc#custom#patch_global('sourceOptions', {
       \   'forceCompletionPattern': '\.\w*|:\w*|->\w*',
       \  },
       \ })
-      " \   'forceCompletionPattern': '\.|:|->'},
 
 call ddc#enable()
 '''
