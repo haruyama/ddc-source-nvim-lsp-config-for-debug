@@ -7,7 +7,6 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require'lspconfig'
-lspconfig.clangd.setup{capabilities = capabilities}
 lspconfig.gopls.setup{capabilities = capabilities}
 EOF
 '''
@@ -64,28 +63,12 @@ call ddc#enable()
 # repo = 'Shougo/ddc-source-nvim-lsp'
 # on_source = 'nvim-lspconfig'
 # rev = '70086994e3d83e65eb4aed6888b84d4b0b2f3aeb'
-# hook_source = '''
-# lua << EOF
-# local capabilities = require("ddc_nvim_lsp").make_client_capabilities()
-# require("lspconfig").denols.setup({
-#   capabilities = capabilities,
-# })
-# EOF
-# '''
 
 # (2) '[ddc] source: nvim-lsp "onCompleteDone()" failed' after selecting lsp candidates
 [[plugins]]
 repo = 'Shougo/ddc-source-nvim-lsp'
 on_source = 'nvim-lspconfig'
 rev = '738b86b5c16ee8f396d9437e6aea17780e325ef1'
-hook_source = '''
-lua << EOF
-local capabilities = require("ddc_nvim_lsp").make_client_capabilities()
-require("lspconfig").denols.setup({
-  capabilities = capabilities,
-})
-EOF
-'''
 
 # (3) work
 # [[plugins]]
