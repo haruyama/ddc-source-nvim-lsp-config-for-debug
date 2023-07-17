@@ -1,8 +1,6 @@
 autocmd!
 
 let g:dein#lazy_rplugins = v:true
-let g:dein#install_progress_type = 'title'
-let g:dein#enable_notification = v:true
 
 let s:dein_dir = expand('~/.cache/dein-nvim-debug')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
