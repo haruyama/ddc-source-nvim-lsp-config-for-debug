@@ -27,10 +27,6 @@ repo = 'Shougo/ddc-sorter_rank'
 on_source = 'ddc.vim'
 
 [[plugins]]
-repo = 'Shougo/ddc-converter_remove_overlap'
-on_source = 'ddc.vim'
-
-[[plugins]]
 repo = 'Shougo/ddc-ui-native'
 on_source = 'ddc.vim'
 
@@ -47,7 +43,6 @@ call ddc#custom#patch_global('sourceOptions', {
       \ '_': {
       \   'matchers': ['matcher_head'],
       \   'sorters': ['sorter_rank'],
-      \   'converters': ['converter_remove_overlap'],
       \ },
       \ 'nvim-lsp': {
       \   'mark': 'lsp', 
