@@ -40,12 +40,6 @@ repo = 'Shougo/ddc.vim'
 depends = ['denops.vim', 'nvim-lspconfig']
 on_event = ['InsertEnter']
 hook_source = '''
-" <TAB>: completion.
-inoremap <silent><expr> <TAB>
-\ pumvisible() ? '<C-n>' :
-\ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-\ '<TAB>' : ddc#map#manual_complete()
-
 call ddc#custom#patch_global(
       \ 'sources', ['around', 'nvim-lsp']
       \ )
