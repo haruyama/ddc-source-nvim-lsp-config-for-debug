@@ -1,0 +1,12 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'lewis6991/impatient.nvim'
+if = 'has("nvim")'
+hook_source = '''
+lua require('impatient')
+'''
